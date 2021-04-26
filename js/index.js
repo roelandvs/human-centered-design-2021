@@ -13,10 +13,17 @@ const listenIcon = document.querySelector('#listening-icon');
 const woordHet = document.querySelectorAll('.het');
 const completeAlinea = document.querySelector('#complete-alinea')
 let counter = 0;
+let buttonIsDragged = false;
 
 function activateSpeech() {
-    statusBar.classList.add('active');
-    recognition.start();
+    if (buttonIsDragged === false) {
+        console.log('buttons wasnt dragged')
+        statusBar.classList.add('active');
+        recognition.start();
+    } else {
+        console.log('buttons is dragged')
+        buttonIsDragged = false;
+    }
 };
 
 recognition.onresult = function(e) {
@@ -73,11 +80,12 @@ recognition.onresult = function(e) {
 }
 
 recognition.onspeechend = function() {
-  recognition.stop();
+    recognition.stop();
 }
 
 recognition.onerror = function(e) {
-  output.textContent = 'Error occurred in recognition: ' + e.error;
+    output.textContent = 'Error occurred in recognition: ' + e.error;
+    listenIcon.style.opacity = '0';
 }
 
 startButton.addEventListener('click', activateSpeech);
