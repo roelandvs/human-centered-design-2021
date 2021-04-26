@@ -71,7 +71,7 @@ button {
     opacity: 1;
 }
 
-#listening-blob {
+#listening-icon {
     width: 10px;
     height: 10px;
     border-radius: 100%;
@@ -87,26 +87,32 @@ button {
 
 .het {
     background-color: var(--het-background-color);
+    transition: 0.5s all;
 }
 
 .weer {
     background-color: var(--weer-background-color);
+    transition: 0.5s all;
 }
 
 .weer-gevuld {
     background-color: var(--weer-gevuld-background-color);
+    transition: 0.5s all;
 }
 
 #het-duurt {
     background-color: var(--duurt-background-color);
+    transition: 0.5s all;
 }
 
 #weer-gevuld-zijn {
     background-color: var(--weer-gevuld-zijn-background-color);
+    transition: 0.5s all;
 }
 
 #complete-alinea {
     background-color: var(--complete-alinea-background-color);
+    transition: 0.5s all;
 }
 
 #output {
