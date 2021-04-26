@@ -17,11 +17,9 @@ let buttonIsDragged = false;
 
 function activateSpeech() {
     if (buttonIsDragged === false) {
-        console.log('buttons wasnt dragged')
         statusBar.classList.add('active');
         recognition.start();
     } else {
-        console.log('buttons is dragged')
         buttonIsDragged = false;
     }
 };
