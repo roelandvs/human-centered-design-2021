@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+::root {
+    --het-background-color: #FFF;
+    --duurt-background-color: #FFF;
+}
+
 body {
   max-width: 800px;
   margin: 100px auto;
@@ -73,6 +78,14 @@ button {
     bottom: 0;
     margin: auto;
     animation: pulseAnimation 2s infinite;
+}
+
+.het {
+    background-color: var(--het-background-color);
+}
+
+#het-duurt {
+    background-color: var(--duurt-background-color);
 }
 
 @keyframes pulseAnimation {

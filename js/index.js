@@ -9,12 +9,12 @@ recognition.maxAlternatives = 1;
 const startButton = document.querySelector('#start-button');
 const statusBar = document.querySelector('#status-bar');
 const output = document.querySelector('#output');
+const woordHet = document.querySelectorAll('.het');
 // let finalSpeech;
 
 function activateSpeech() {
     statusBar.classList.add('active');
     recognition.start();
-    console.log('Ready to receive a color command.');
 };
 
 recognition.onresult = function(e) {
@@ -31,9 +31,18 @@ recognition.onresult = function(e) {
     for (let i = e.resultIndex; i < e.results.length; i++) {
         if (e.results[i].isFinal) {
             // finalSpeech += e.results[i][0].transcript;
+            currentSpeech += e.results[i][0].transcript;
             recognition.stop();
         } else {
             currentSpeech += e.results[i][0].transcript;
+            // console.log(e.results[i][0].transcript)
+            if (e.results[i][0].transcript === 'het') {
+                document.documentElement.style.setProperty("--het-background-color", '#BEE0FF');
+            } else if (e.results[i][0].transcript === 'duurt' || e.results[i][0].transcript === ' duurt' || e.results[i][0].transcript === 'het duurt') {
+                document.documentElement.style.setProperty("--het-background-color", 'rgba(255,0,0,0)');
+                document.documentElement.style.setProperty("--duurt-background-color", '#BEFFC0');
+            }
+            // console.log(e.results[i][0].transcript)
         }
     }
     
