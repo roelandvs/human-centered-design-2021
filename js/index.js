@@ -38,9 +38,11 @@ recognition.onresult = function(e) {
             // console.log(e.results[i][0].transcript)
             if (e.results[i][0].transcript === 'het') {
                 document.documentElement.style.setProperty("--het-background-color", '#BEE0FF');
+                document.documentElement.style.setProperty("--output-background-color", '#BEE0FF');
             } else if (e.results[i][0].transcript === 'duurt' || e.results[i][0].transcript === ' duurt' || e.results[i][0].transcript === 'het duurt') {
                 document.documentElement.style.setProperty("--het-background-color", 'rgba(255,0,0,0)');
                 document.documentElement.style.setProperty("--duurt-background-color", '#BEFFC0');
+                document.documentElement.style.setProperty("--output-background-color", '#BEFFC0');
             }
             // console.log(e.results[i][0].transcript)
         }

@@ -7,6 +7,7 @@
 ::root {
     --het-background-color: #FFF;
     --duurt-background-color: #FFF;
+    --output-background-color: #FFF;
 }
 
 body {
@@ -86,6 +87,12 @@ button {
 
 #het-duurt {
     background-color: var(--duurt-background-color);
+}
+
+#output {
+    background-color: var(--output-background-color);
+    width: fit-content;
+    margin: 0 auto;
 }
 
 @keyframes pulseAnimation {
