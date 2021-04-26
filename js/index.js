@@ -10,6 +10,8 @@ const startButton = document.querySelector('#start-button');
 const statusBar = document.querySelector('#status-bar');
 const output = document.querySelector('#output');
 const woordHet = document.querySelectorAll('.het');
+const completeAlinea = document.querySelector('#complete-alinea')
+let counter = 0;
 // let finalSpeech;
 
 function activateSpeech() {
@@ -30,12 +32,28 @@ recognition.onresult = function(e) {
 
     for (let i = e.resultIndex; i < e.results.length; i++) {
         if (e.results[i].isFinal) {
-            // finalSpeech += e.results[i][0].transcript;
+            counter += 1;
             currentSpeech += e.results[i][0].transcript;
-            recognition.stop();
+            console.log(counter)
+            if (counter === 1) {
+                document.documentElement.style.setProperty("--output-background-color", 'rgba(255,0,0,0)');
+                output.innerText = 'U kunt spreken (tot waar u wil selecteren)';
+            } else if (counter === 2) {
+                document.documentElement.style.setProperty("--duurt-background-color", 'rgba(255,0,0,0)');
+                document.documentElement.style.setProperty("--weer-background-color", 'rgba(255,0,0,0)');
+                document.documentElement.style.setProperty("--weer-gevuld-background-color", 'rgba(255,0,0,0)');
+                document.documentElement.style.setProperty("--weer-gevuld-zijn-background-color", 'rgba(255,0,0,0)');
+                document.documentElement.style.setProperty("--output-background-color", 'rgba(255,0,0,0)');
+                document.documentElement.style.setProperty("--complete-alinea-background-color", '#BEE0FF');
+                output.innerText = 'Zeg “Kopieer” om te kopieëren';
+            } else if (counter === 3) {
+                statusBar.classList.remove('active');
+                recognition.stop();
+            }
+
         } else {
             currentSpeech += e.results[i][0].transcript;
-            // console.log(e.results[i][0].transcript)
+            console.log(e.results[i][0].transcript)
             if (e.results[i][0].transcript === 'het') {
                 document.documentElement.style.setProperty("--het-background-color", '#BEE0FF');
                 document.documentElement.style.setProperty("--output-background-color", '#BEE0FF');
@@ -43,13 +61,24 @@ recognition.onresult = function(e) {
                 document.documentElement.style.setProperty("--het-background-color", 'rgba(255,0,0,0)');
                 document.documentElement.style.setProperty("--duurt-background-color", '#BEFFC0');
                 document.documentElement.style.setProperty("--output-background-color", '#BEFFC0');
+            } else if (e.results[i][0].transcript === 'weer' || e.results[i][0].transcript === ' weer') {
+                document.documentElement.style.setProperty("--weer-background-color", '#BEE0FF');
+                document.documentElement.style.setProperty("--output-background-color", '#BEE0FF');
+            } else if (e.results[i][0].transcript === ' weer gevuld' || e.results[i][0].transcript === 'weer gevuld' || e.results[i][0].transcript === ' zijn') {
+                document.documentElement.style.setProperty("--weer-background-color", 'rgba(255,0,0,0)');
+                document.documentElement.style.setProperty("--weer-gevuld-background-color", '#BEFFC0');
+                document.documentElement.style.setProperty("--output-background-color", '#BEFFC0');
+            } else if (e.results[i][0].transcript === ' weer gevuld zijn') {
+                document.documentElement.style.setProperty("--weer-gevuld-zijn-background-color", '#BEFFC0');
+            } else if (e.results[i][0].transcript === 'kopieer' || e.results[i][0].transcript === ' kopieer') {
+                navigator.clipboard.writeText(completeAlinea.textContent);
+                document.documentElement.style.setProperty("--complete-alinea-background-color", 'rgba(255,0,0,0)');
             }
-            // console.log(e.results[i][0].transcript)
+            output.innerText = currentSpeech;
         }
     }
     
     // console.log(finalSpeech)
-    output.innerText = currentSpeech;
 
     // const words = event.results[0][0].transcript;
     // output.textContent = words;

@@ -6,8 +6,12 @@
 
 ::root {
     --het-background-color: #FFF;
+    --weer-background-color: #FFF;
+    --weer-gevuld-background-color: #FFF;
+    --weer-gevuld-zijn-background-color: #FFF;
     --duurt-background-color: #FFF;
     --output-background-color: #FFF;
+    --complete-alinea-background-color: #FFF;
 }
 
 body {
@@ -85,8 +89,24 @@ button {
     background-color: var(--het-background-color);
 }
 
+.weer {
+    background-color: var(--weer-background-color);
+}
+
+.weer-gevuld {
+    background-color: var(--weer-gevuld-background-color);
+}
+
 #het-duurt {
     background-color: var(--duurt-background-color);
+}
+
+#weer-gevuld-zijn {
+    background-color: var(--weer-gevuld-zijn-background-color);
+}
+
+#complete-alinea {
+    background-color: var(--complete-alinea-background-color);
 }
 
 #output {
