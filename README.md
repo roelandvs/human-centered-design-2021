@@ -9,6 +9,7 @@
 ## Wat zou ik nog willen toevoegen
 - script
 - aantal matches
+- feedback op praat tijd
 
 # Exclusive Design Principles
 ## Ignore Conventions
@@ -18,4 +19,5 @@
 
 # Conclusie / Leerdoelen
 ## Testen Algemeen
+### Wat ga ik anders doen
 ## Exclusive Design
