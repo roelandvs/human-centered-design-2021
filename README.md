@@ -66,16 +66,22 @@ Door het testen met Eric heb ik steeds beter geleerd wat Eric wel en niet kan, e
 Hetgene waarin Ignore Conventions het meeste terug komt is de button die constant in je scherm staat. Deze is speciaal voor Eric constant zichtbaar aangezien Eric liever niet z'n muis te veel beweegt. Voor een normale gebruiker is het vervelend om constant een button in je scherm te hebben. 
 
 ## Prioritise Identity
-Ik vind dit een lastig begrip aangezien het resultaat van Prioritise Identity en Study Sitaution mij erg vergelijkbaar lijkt. Het lijkt mij dat je door Prioritise Identity (het testen en samenwerken met de doelgroep) een beter begrip krijgt van de unieke situatie waarin je doelgroep zich bevind (Study Situation). 
-
-Als ik toch moet aangeven hoe Priotise Identity terug te vinden is in de app zou ik zeggen dat bijvoorbeeld de button niet alleen constant in je scherm staat, maar ook te verslepen rond je hele scherm, zodat Eric zelf kan bepalen waar je de button wil hebben staan in je scherm. En altijd de mogelijkheid heeft om hem te verplaatsen als hij in de weg staat. Dit inzicht zou ik nooit zeld bedacht hebben zonder te testen met Eric.
+Priotise Identity is terug vinden in de app bij bijvoorbeeld de button. De button is namelijk niet alleen constant in je scherm staat, maar ook te verslepen rond je hele scherm, zodat Eric zelf kan bepalen waar je de button wil hebben staan in je scherm. En altijd de mogelijkheid heeft om hem te verplaatsen als hij in de weg staat. Dit inzicht zou ik nooit zelf hebben bedacht zonder te testen met Eric.
 
 ## Add Nonsense
 Ik vroeg Eric tijdens een test of hij misschien een idee had over hoe de ervaring van de app leuker kon worden. Als antwoord daarop kreeg ik: Ik wil niet dat de ervaring leuk is, maar gewoon snel. Hierdoor had ik in het begin moeite met add nonsense tot ik bedacht dat het snel en leuk niet los van elkaar stond. Een leukere ervaring hoeft niet in de weg te staan van de snelheid of comfort van gebruik.
 
 Als nonsense heb ik daarom bij de laatste iteratie een stripboek thema toegevoegd aan de applicatie. Dit is onder het kopje meer nonsense ook terug te vinden. 
 
-# Conclusie / Leerdoelen
-## Testen Algemeen
-### Wat ga ik anders doen
-## Exclusive Design
+# Conclusie
+Ik heb veel geleerd tijdens het testen met Eric. Niet alleen over Eric en over hoe mensen met fysieke beperkingen obstakels ervaren met het internet, maar ook over testen in het algemeen. 
+
+Zo was het maken van veel aannames nieuw en heb  ik er van geleerd dat je aannames vaak compleet incorrect zijn. Dit toont aan hoe belangrijk het is om te testen met je doelgroep. Zonder het testen zul je niet weten of je aannames kloppen, en op sommige punten heb je nieteens door dat je een aanname doet totdat je test.
+
+Verder heb ik ook geleerd dat het fijn is om snel in je design proces te testen. Het is daardoor nog eenvoudig mogelijk om een nieuwe kant op te gaan met je idee. Hoe verder je bent in het proces hoe lastiger het is om nog te itereren.
+
+Ik had wel verwacht dat ik nog meer zou leren over hoe mensen met een fysieke beperking moeite hebben met het gebruik van hun device. Bij Eric kwam het vaak over of hij totaal geen porblemen had met het gebruik van zijn computer! Wel heb ik daar weer door geleerd dat het handig is om ook te kunnen zien hoe de gebruiker hun device gebruikt. Ik denk dat dit namelijk wel zou tonen dat Eric echt wel aanzienlijk meer moeite moet doen om goed zijn computer te gebruiken.
+
+Ik zou nog mijn laatste prototype nog willen testen, aangezien ik wil weten of de aannames die ik gedaan heb bij de iteratie ook kloppen. 
+
+Ik ben uiteindelijk tevreden met mijn uiteindelijke applicatie, zeker aangezien ik de opdracht verkeerd begrepen had en nog snel tech moest toevoegen. Ook heb ik veel geleerd tijdens HCD dus het vak vind ik ook geslaagd.
