@@ -57,21 +57,23 @@ Tijdens de laatste iteratie kreeg ik eindelijk inspitatie om meer nonsense toe t
 
 
 # Exclusive Design Principles
-Eric is designer, dus komt al snel neer op normale principes
-
-## Ignore Conventions
-- knop constant in je scherm
-
-## Prioritise Identity
-- complete proces
-- sleepbare knop
+Ik vond de principes van exclusive design vaak lastig om bij Eric toe te passen. Eric is namelijk een interaction designer. De feedback die hij geeft is daardoor vaak niet met alleen hem in gedachte, maar met bruikbaarheid voor iedereen in gedachte. Om dingen die speciaal voor hem zijn had ik dus meer moeite, maar uiteindelijk is het bij de derde iteratie wel taylor made voor Eric geworden.
 
 ## Study Situation
-- combinatie van klikken en stem
-- sleepbare knop
+Door het testen met Eric heb ik steeds beter geleerd wat Eric wel en niet kan, en wat hij wel en niet wil. Ik denk dat Study Situation het beste terug komt door de combinatie van klikken en spraak in de applicatie. De applicatie is namelijk niet compleet gebaseerd op spraak. Je start hem met een klik om een button, aangezien Eric dit duidelijker vond dan spraak, en hij is ook comfortabel genoeg om deze knop makkelijk te bereiken en klikken.
+
+## Ignore Conventions
+Hetgene waarin Ignore Conventions het meeste terug komt is de button die constant in je scherm staat. Deze is speciaal voor Eric constant zichtbaar aangezien Eric liever niet z'n muis te veel beweegt. Voor een normale gebruiker is het vervelend om constant een button in je scherm te hebben. 
+
+## Prioritise Identity
+Ik vind dit een lastig begrip aangezien het resultaat van Prioritise Identity en Study Sitaution mij erg vergelijkbaar lijkt. Het lijkt mij dat je door Prioritise Identity (het testen en samenwerken met de doelgroep) een beter begrip krijgt van de unieke situatie waarin je doelgroep zich bevind (Study Situation). 
+
+Als ik toch moet aangeven hoe Priotise Identity terug te vinden is in de app zou ik zeggen dat bijvoorbeeld de button niet alleen constant in je scherm staat, maar ook te verslepen rond je hele scherm, zodat Eric zelf kan bepalen waar je de button wil hebben staan in je scherm. En altijd de mogelijkheid heeft om hem te verplaatsen als hij in de weg staat. Dit inzicht zou ik nooit zeld bedacht hebben zonder te testen met Eric.
 
 ## Add Nonsense
-- tekstballen en knop
+Ik vroeg Eric tijdens een test of hij misschien een idee had over hoe de ervaring van de app leuker kon worden. Als antwoord daarop kreeg ik: Ik wil niet dat de ervaring leuk is, maar gewoon snel. Hierdoor had ik in het begin moeite met add nonsense tot ik bedacht dat het snel en leuk niet los van elkaar stond. Een leukere ervaring hoeft niet in de weg te staan van de snelheid of comfort van gebruik.
+
+Als nonsense heb ik daarom bij de laatste iteratie een stripboek thema toegevoegd aan de applicatie. Dit is onder het kopje meer nonsense ook terug te vinden. 
 
 # Conclusie / Leerdoelen
 ## Testen Algemeen
