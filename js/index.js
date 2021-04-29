@@ -129,7 +129,7 @@ recognition.onspeechend = function() {
 }
 
 recognition.onerror = function(e) {
-    output.textContent = 'Error occurred in recognition: ' + e.error;
+    output.textContent = 'Er heeft een error plaatsgevonden: ' + e.error;
     listenIcon.style.opacity = '0';
 }
 
